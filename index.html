@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="main-dash">
+          <div class="user-info">
+            <div class="user-img-con">
+              <img
+                src="images/image-jeremy.png"
+                alt="Jeremy Robson"
+                id="user-img"
+              />
+            </div>
+            <div class="user-name-con">
+              <span>Report for</span>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+          <ul class="time-track-control">
+            <li data-type="daily">Daily</li>
+            <li data-type="weekly" class="active">Weekly</li>
+            <li data-type="monthly">Monthly</li>
+          </ul>
+        </div>
+        <div class="time-track-con"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  background-color: hsl(226, 43%, 10%);
+}
+.container {
+  width: 100%;
+  padding: 66px 25px;
+}
+.main {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.main-dash {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  margin-bottom: 20px;
+}
+.user-info {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  background-color: hsl(246, 80%, 60%);
+  padding: 25px 20px 53px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.user-img-con {
+  width: 59px;
+  margin-right: 20px;
+}
+#user-img {
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.user-name-con span {
+  color: hsl(236, 100%, 87%);
+  margin-bottom: 2px;
+  display: block;
+  font-size: 14px;
+}
+.user-name-con h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 26px;
+}
+.time-track-control {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 24px 31px;
+}
+.time-track-control li {
+  cursor: pointer;
+  font-size: 18px;
+  color: hsl(235, 45%, 61%);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.time-track-control li.active,
+.time-track-control li:hover {
+  color: #fff;
+}
+
+.time-track-con {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  flex-direction: column;
+  gap: 25px;
+}
+.track-box {
+  padding-top: 33px;
+  background-repeat: no-repeat;
+  background-position: 92% -16px;
+  background-size: 75px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.track-box-con {
+  background-color: hsl(235, 46%, 20%);
+  padding: 28px 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.track-box-con:hover {
+  background-color: hsl(235, 45%, 61%);
+}
+.track-box-con .head {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.track-box-con .head .title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+.toggle {
+  cursor: pointer;
+}
+.toggle span {
+  width: 5px;
+  height: 5px;
+  background-color: hsl(236, 100%, 87%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  display: inline-block;
+  margin-left: 3px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.toggle:hover span {
+  background-color: #fff;
+}
+.time-track-info {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+}
+.time-track-info .current {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+}
+.time-track-info .previous {
+  color: hsl(236, 100%, 87%);
+  font-size: 13px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .main {
+    flex-direction: row;
+  }
+  .main-dash {
+    width: calc(26% - 20px);
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .user-info {
+    flex-direction: column;
+    align-items: normal;
+    -webkit-box-align: normal;
+    -moz-box-align: normal;
+    -ms-flex-align: normal;
+    -webkit-align-items: normal;
+  }
+  .user-img-con {
+    margin-bottom: 23px;
+    margin-right: 0;
+  }
+  .time-track-control {
+    flex-direction: column;
+    padding: 16px 31px;
+  }
+  .time-track-control li {
+    margin-bottom: 15px;
+  }
+  .track-box {
+    width: calc(33.3333% - 13.3333px);
+    height: 150px;
+  }
+  .time-track-con {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    gap: 20px;
+    width: 74%;
+  }
+  .track-box-con .head {
+    margin-bottom: 15px;
+  }
+  .time-track-info {
+    flex-direction: column;
+    align-items: normal;
+    -webkit-box-align: normal;
+    -moz-box-align: normal;
+    -ms-flex-align: normal;
+    -webkit-align-items: normal;
+  }
+  .time-track-info .current {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .main {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 340px) {
+  .user-img-con {
+    width: 51px;
+  }
+  .user-name-con h1 {
+    font-size: 20px;
+  }
+  .time-track-control li {
+    font-size: 15px;
+  }
+  .track-box-con .head .title {
+    font-size: 14px;
+  }
+  .time-track-info .current {
+    font-size: 23px;
+  }
+  .time-track-info .previous {
+    font-size: 11px;
+  }
+}
